@@ -1,0 +1,393 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>pandaBlog</title><meta name="author" content="Panda"><meta name="copyright" content="Panda"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="胖达的项目bug记录">
+<meta property="og:type" content="website">
+<meta property="og:title" content="pandaBlog">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="pandaBlog">
+<meta property="og:description" content="胖达的项目bug记录">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/codepandaLN/picgocdn@master/img/%E5%A4%B4%E5%83%8F.png">
+<meta property="article:author" content="Panda">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.staticaly.com/gh/codepandaLN/picgocdn@master/img/%E5%A4%B4%E5%83%8F.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Panda","link":"链接: ","source":"来源: pandaBlog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'pandaBlog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-09-19 15:07:53'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = url => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      link.onload = () => resolve()
+      link.onerror = () => reject()
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://unpkg.zhimg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.min.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.staticaly.com/gh/codepandaLN/picgocdn@master/img/%E5%A4%B4%E5%83%8F.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="pandaBlog"><span class="site-name">pandaBlog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">pandaBlog</h1><div id="site_social_icons"><a class="social-icon" href="https://https://github.com/codepandaLN" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2637248917@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2024/08/27/%E7%90%86%E8%AE%BA-%E6%A1%88%E4%BE%8B/" title="无题"><img class="post-bg" src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/61e5c154-982b-4edc-9dc1-6d1dab437278.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/08/27/%E7%90%86%E8%AE%BA-%E6%A1%88%E4%BE%8B/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-08-27T14:24:58.000Z" title="发表于 2024-08-27 22:24:58">2024-08-27</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/oracle/">oracle</a></span></div><div class="content">b
+背景这周三在监控里看到一条 top sql，一天执行三百万次，平均每秒 34.7 次， 但是分区表里没有数据，每次逻辑读 78M 左右，很奇怪。我下面尽可能还原一下生产的情况。
+脱敏信息如下图：
+
+
+
+问题我梳理了一些这次试验的疑问，如果有兴趣可以继续往下看，仅个人主观想法，欢迎指正讨论
+
+一天执行三百万次，平均每秒 34 次，分区表里还没有数据正常吗？
+没有数据逻辑读却很大，平均每次 78M？高水位线造成的吗？但是每张分区表只有 4M 大小，还需要降吗？
+SQL 语句能不能优化？SQL 涉及的表有没有索引？走没有索引？索引是不是最优的？索引选择性怎么样？
+怎么改执行计划 走索引和走全表的区别？怎么优化？
+
+是不是可有选择单表，废掉分区表
+分析1. 一天执行三百万次，平均每秒 34 次，分区表里还没有数据正常吗？每秒 34 次的执行频率并不算特别高，但是正常情况下，这种情况可能是由于这是一张中间缓存一些中间数据，或者 SQL 执行计划被频繁重用，即使没有数据，也可能因为计划的重用导致大量逻辑读。这个应该算正常。
+2. 没有数据逻辑读却很大，平均每次 78M？高水位线造成的吗？但是每 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/08/22/SQL%EF%BC%8C%E6%95%B0%E6%8D%AE%E7%AB%9F%E6%98%AF%E7%A9%BA%E7%9A%84%EF%BC%9F/" title="每天查询三百万次的top SQL，数据竟是空的？"><img class="post-bg" src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/3d43f36c-6429-4251-b8bc-ca08ce7b35e6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="每天查询三百万次的top SQL，数据竟是空的？"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/08/22/SQL%EF%BC%8C%E6%95%B0%E6%8D%AE%E7%AB%9F%E6%98%AF%E7%A9%BA%E7%9A%84%EF%BC%9F/" title="每天查询三百万次的top SQL，数据竟是空的？">每天查询三百万次的top SQL，数据竟是空的？</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-08-22T08:21:45.000Z" title="发表于 2024-08-22 16:21:45">2024-08-22</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/oracle/">oracle</a></span></div><div class="content">背景这周三在监控里看到一条 top sql，一天执行三百万次，平均每秒 34.7 次， 但是分区表里没有数据，每次逻辑读 78M 左右，很奇怪。我下面尽可能还原一下生产的情况。
+脱敏信息如下图：
+
+
+
+问题我梳理了一些这次试验的疑问，如果有兴趣可以继续往下看，仅个人主观想法，欢迎指正讨论
+
+一天执行三百万次，平均每秒 34 次，分区表里还没有数据正常吗？
+没有数据逻辑读却很大，平均每次 78M？高水位线造成的吗？但是每张分区表只有 4M 大小，还需要降吗？
+SQL 语句能不能优化？SQL 涉及的表有没有索引？走没有索引？索引是不是最优的？索引选择性怎么样？
+怎么改执行计划 走索引和走全表的区别？怎么优化？
+
+是不是可有选择单表，废掉分区表
+分析1. 一天执行三百万次，平均每秒 34 次，分区表里还没有数据正常吗？每秒 34 次的执行频率并不算特别高，但是正常情况下，这种情况可能是由于这是一张中间缓存一些中间数据，或者 SQL 执行计划被频繁重用，即使没有数据，也可能因为计划的重用导致大量逻辑读。这个应该算正常。
+2. 没有数据逻辑读却很大，平均每次 78M？高水位线造成的吗？但是每张分 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/08/16/LOCAL-LISTENER%E5%8F%82%E6%95%B0%E5%AF%BC%E8%87%B4%E4%B8%9A%E5%8A%A1%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%8C%E6%96%87%E6%9C%AB%E9%99%84Oracle%E8%BF%9E%E6%8E%A5%E6%95%85%E9%9A%9C%E6%A3%80%E6%9F%A5%E7%9B%91%E5%90%AC%E7%9A%84%E6%8E%92%E6%9F%A5%E6%B5%81%E7%A8%8B/" title="无题"><img class="post-bg" src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/35280d287dbfff0c045c0b4cbbe09599.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/08/16/LOCAL-LISTENER%E5%8F%82%E6%95%B0%E5%AF%BC%E8%87%B4%E4%B8%9A%E5%8A%A1%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%8C%E6%96%87%E6%9C%AB%E9%99%84Oracle%E8%BF%9E%E6%8E%A5%E6%95%85%E9%9A%9C%E6%A3%80%E6%9F%A5%E7%9B%91%E5%90%AC%E7%9A%84%E6%8E%92%E6%9F%A5%E6%B5%81%E7%A8%8B/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-08-16T12:58:29.000Z" title="发表于 2024-08-16 20:58:29">2024-08-16</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/oracle/">oracle</a></span></div><div class="content">背景及问题今天在Oracle BCV技术[1]做数据同步，建立生产库的测试库，需要DBA配合同步前后的停库和起库。在同步完起库后，有部门反应同步好的测试库连接不上去。
+问题排查以我当前的知识储备，能想到的可能就是以下几点进行检查：
+
+数据库实例状态，是不是没有open			 —&gt; select status from v$instance;
+监听器状态,是不是监听没起来 				 —&gt;  lsnrctl status|start
+Oralce黑白名单配置问题 					 —&gt;   $ORACLE_HOME&#x2F;network&#x2F;admin&#x2F;sqlnet.ora  
+客户端 tnsnames.ora 配置问题，连接符写错了  —&gt;  tnsping  
+网络连接问题，端口是否开放 				 —&gt; ping IP 、 telnet IP 1521
+
+这些都不是，由于情况紧急，测试环境等着用，部门同事再三提示下，我还是不知道他们说的那个参数—LOCAL_LISTENER，这个就是引起这次数据库连接不上的罪魁祸首，导师一下就解决了👍！我把 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/07/29/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86-%E5%8F%82%E6%95%B0%E6%96%87%E4%BB%B6%E3%80%81%E6%8E%A7%E5%88%B6%E6%96%87%E4%BB%B6%E3%80%81%E5%BD%92%E6%A1%A3/" title="无题"><img class="post-bg" src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/325cb8b5-477c-4f97-a977-5850fa3e2e3d.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/29/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86-%E5%8F%82%E6%95%B0%E6%96%87%E4%BB%B6%E3%80%81%E6%8E%A7%E5%88%B6%E6%96%87%E4%BB%B6%E3%80%81%E5%BD%92%E6%A1%A3/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-29T06:28:03.000Z" title="发表于 2024-07-29 14:28:03">2024-07-29</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/oracle/">oracle</a></span></div><div class="content">STARTUP 起库：
+加载参数文件 –》startup nomount
+加载控制文件 –》startup mount
+加载数据文件等所有文件–》startup （打开到open）
+
+1.1 参数文件spfile（服务器参数文件） 是一个二进制文件，存储在服务端的 $ORACLE_HOME/dbs 目录下。不能直接用文本编辑器修改参数，而是通过 sqlplus 中的命令动态修改。由于其二进制特性，修改后可以立即生效，无需重启数据库。pfile（参数文件） 是一个文本文件，可以存储在客户端或服务端，用文本编辑器进行查看和修改。修改 pfile 后，需要重启数据库才能使更改生效。pfile 在启动数据库时提供参数配置，可以作为 spfile 的备份或在特定情况下使用。
+1.1.1 优先级别：oracle 启动读取参数文件的顺序,如果个文件都不存在，则Oracle会报错spfile.ora –&gt; spfile.ora –&gt;init.ora –&gt;init.ora
+1.1.2 默认目录：1$ORACLE_HOME/dbs
+
+1.1.3 参数文件之间的转换123456789101 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/07/18/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%AF%A2Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%80%E5%91%A8%E5%86%85%E6%AF%8F%E5%A4%A9%E7%9A%84SQL%E6%89%A7%E8%A1%8C%E6%AC%A1%E6%95%B0/" title="如何查询Oracle数据库一周内每天的SQL执行次数"><img class="post-bg" src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/35280d287dbfff0c045c0b4cbbe09599.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何查询Oracle数据库一周内每天的SQL执行次数"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/18/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%AF%A2Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%80%E5%91%A8%E5%86%85%E6%AF%8F%E5%A4%A9%E7%9A%84SQL%E6%89%A7%E8%A1%8C%E6%AC%A1%E6%95%B0/" title="如何查询Oracle数据库一周内每天的SQL执行次数">如何查询Oracle数据库一周内每天的SQL执行次数</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-18T13:27:49.000Z" title="发表于 2024-07-18 21:27:49">2024-07-18</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/oracle/">oracle</a></span></div><div class="content">一、问题： 今天引入的问题是：oracle数据库怎么查询一周内，每天的查询次数？  
+正好这周在学数据库的调优工作，我记得数据库的AWR报告会记录SQL的执行情况，可以从DBA_HIST_SNAPSHOT里面找出7天的快照ID，在DBA_HIST_SQLSTAT收集一下。先来了解一下这两个相关视图
+二、相关视图：dba_hist_sqlstat 和dba_hist_snapshot视图是 Oracle AWR（Automatic Workload Repository）的一部分。其中，  
+1、DBA_HIST_SQLSTATdba_hist_sqlstat是Oracle数据库中的历史SQL统计信息视图，用于提供有关SQL语句执行的历史性能信息。它记录了SQL语句的执行计划、执行时间、消耗的资源等统计数据。dba_hist_sqlstat可以用于监控和分析数据库中的SQL性能问题。常用字段：SQL_ID：SQL语句的唯一标识符。SNAP_ID：快照ID，表示采样的时间点。DBID：数据库ID。INSTANCE_NUMBER：实例编号。PLAN_HASH_VALUE：SQL执行计划的哈希 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/07/10/%E6%A8%A1%E6%8B%9FDML%E3%80%81DDL%E4%B8%8Eundo%E7%9A%84%E5%85%B3%E7%B3%BB/" title="模拟DML、DDL与undo的关系"><img class="post-bg" src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/img/%E5%A4%B4%E5%83%8F.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="模拟DML、DDL与undo的关系"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/10/%E6%A8%A1%E6%8B%9FDML%E3%80%81DDL%E4%B8%8Eundo%E7%9A%84%E5%85%B3%E7%B3%BB/" title="模拟DML、DDL与undo的关系">模拟DML、DDL与undo的关系</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-10T13:21:00.000Z" title="发表于 2024-07-10 21:21:00">2024-07-10</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/oracle/">oracle</a></span></div><div class="content">已经有两个月没有更新博客了，主要实在忙毕设和毕业的一些事情！这两个月也是非常的精彩呀，充分体会到了职场的和校园的不同，作为一名刚毕业就满 1 年工作经验的牛马人，在两个月期间经历了两次调岗、两次降薪，如果再来个裁员那就更精彩了！！哈哈
+废话不多说，上菜
+今天主要来研究DDL、DML与undo的关系？前两天部门有同事问：大概意思就是：在执行插入语句时能否理解为它占用的undo表空间和该表所占数据文件的大小一致，我是这么回答的：小小获得了部门主管的称赞！
+​	在数据库事务四大特性中有一个是原子性，具体来说就是 原子性是指对数据库的一系列操作，要么全部成功，要么全部失败，不可能出现部分成功的情况。实际上，原子性底层就是通过undo log实现的。undo log主要记录了数据的逻辑变化，比如一条INSERT语句，对应一条DELETE的undo log，对于每个UPDATE语句，对应一条相反的UPDATE的undo log，这样在发生错误时，就能回滚到事务之前的数据状态。同时，undo log也是MVCC(多版本并发控制)实现的关键。​	undo空间主要用于存储事务未提交之前的数据快照，方便回 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/18/GitHub-Git%E4%B8%8A%E4%BC%A0%E6%8A%A5%E9%94%99/" title="GitHub&amp;Git上传报错"><img class="post-bg" src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/img/7f4cdaad-bf13-47ca-a103-3658800b6131.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="GitHub&amp;Git上传报错"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/18/GitHub-Git%E4%B8%8A%E4%BC%A0%E6%8A%A5%E9%94%99/" title="GitHub&amp;Git上传报错">GitHub&amp;Git上传报错</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-18T14:24:48.000Z" title="发表于 2023-03-18 22:24:48">2023-03-18</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/bug/">bug</a></span></div><div class="content">[Git常用命令面试题 60道.pdf](D:&#x2F;桌面&#x2F;notes&#x2F;02、就业加强训练&#x2F;06-2022面试题串讲&#x2F;面试题&#x2F;Git常用命令面试题 60道.pdf)
+github master分支迁移到main分支首先克隆一份原仓库到本地进行操作：
+1git clone xxxxxxx.git
+
+​     创建并切换到main
+1git checkout -b main
+
+​     推送main
+1git push origin main
+
+​     删除本地master
+1git branch -d master
+
+​     删除远程master
+1git push origin :master
+
+​    这样就算成功迁移到main分支了。
+在github同一个仓库立上传多个项目想把平时练习的代码放到一个仓库里，百度了都没找到解答，自己就用了一个笨方法，仅供参考。1、建立本地一个文件夹专门放不同练习代码我是 D:\ggg。右键 Git Bath Here进入git操作：先上传一个小练习的文件夹
+①$ git init②$ ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/02/21/%E6%97%A7%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99YAMLException-create-breakpoint/" title="旧项目启动报错YAMLException.create breakpoint"><img class="post-bg" src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/img/ad4f17ce-de1e-46b0-b74e-37345d86624d.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="旧项目启动报错YAMLException.create breakpoint"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/02/21/%E6%97%A7%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99YAMLException-create-breakpoint/" title="旧项目启动报错YAMLException.create breakpoint">旧项目启动报错YAMLException.create breakpoint</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-02-21T09:09:34.000Z" title="发表于 2023-02-21 17:09:34">2023-02-21</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/bug/">bug</a></span></div><div class="content">很久没启动的项目报错
+1、编码问题Dfile.encoding&#x3D;UTF-8 -classpath 
+1D:\software\Java\jdk1.8.0_261\bin\java.exe -XX:TieredStopAtLevel=1 -noverify -Dspring.output.ansi.enabled=always &quot;-javaagent:D:\software\IntelliJ IDEA 2020.3\lib\idea_rt.jar=12773:D:\software\IntelliJ IDEA 2020.3\bin&quot; -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dfile.encoding=UTF-8 -classpath 
+
+错误原因springboot项目yml文件中使用了中文注释，其实是yml文件的编码导致的。
+解决方 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/02/20/API%E6%8E%A5%E5%8F%A3%E5%B9%B3%E5%8F%B0/" title="API接口平台"><img class="post-bg" src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/img/62b8a6f4-7863-469a-9e7c-c8e18a3fd518.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="API接口平台"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/02/20/API%E6%8E%A5%E5%8F%A3%E5%B9%B3%E5%8F%B0/" title="API接口平台">API接口平台</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-02-19T19:06:11.000Z" title="发表于 2023-02-20 03:06:11">2023-02-20</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></span></div><div class="content">API开放平台前言
+背景
+1．前端开发需要用到后台接口2．使用现成的系统的功能(http://api.btstu.cn/)
+做一个API接口平台:
+
+防止攻击（安全性)
+不能随便调用(限制、开通)
+统计调用次数
+计费
+流量保护
+API接入
+
+项目介绍
+做一个提供API接口调用的平台，用户可以注册登录，开通接口调用权限。用户可以使用接口，并且每次调用会进行统计。管理员可以发布接口、下线接口、接入接口，以及可视化接口的调用情况、数据。
+业务流程
+
+技术选型
+前端：
+
+Ant Design Pro 
+
+React
+
+Ant Design Procomponents
+
+Umi
+
+Umi Request (Axios的封装)
+
+
+后端：
+
+Java Spring Boot
+Spring Boot Starter (SDK开发)
+Dubbo
+Nacos
+Spring Cloud Gateway (网关、限流、日志实现)
+
+一、项目初始化
+1、Ant Design Pro
+快速开始使用，可以查看官方教程
+初始化
+
+12# 使用 npmnpm i @ant-design/pro-cli -g
+
+打开将 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/01/27/0-1%E7%8B%AC%E7%AB%8B%E5%AE%9E%E7%8E%B0%E7%AE%A1%E7%90%86%E7%B3%BB-bug%E8%AE%B0%E5%BD%95/" title="0-1独立实现管理系统 bug记录"><img class="post-bg" src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/img/e6b6323b-ffa3-46a8-a37f-352fc252ee23.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="0-1独立实现管理系统 bug记录"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/01/27/0-1%E7%8B%AC%E7%AB%8B%E5%AE%9E%E7%8E%B0%E7%AE%A1%E7%90%86%E7%B3%BB-bug%E8%AE%B0%E5%BD%95/" title="0-1独立实现管理系统 bug记录">0-1独立实现管理系统 bug记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-01-27T12:20:45.000Z" title="发表于 2023-01-27 20:20:45">2023-01-27</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/bug/">bug</a></span></div><div class="content">1.MySQL提示Incorrect column name ‘xxx’因为字段名是在sqlfather复制过来的，导致每个字段后面都多加了一个空格
+所以MySQL会提示字段名不正确解决这个问题的办法很简单，只用删除每个字段名后面的空格即可！
+2.Cannot resolve class ‘Driver’描述：在application.yml中配置数据库，发现driver-class-name 爆红，原因是Cannot resolve class ‘Driver’
+
+3.Application run failed问题解决1.yml编码问题解决方法：修改application.yml文件格式。改为UTF-8。
+ Editor –&gt; File Encodings –&gt; Default encoding for properties files: UTF-8。
+2.配置文件删除4.Cause: java.sql.SQLException: The server time zone value ‘�й���׼ʱ��‘ is unrecognized or repres问题描述：C ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.staticaly.com/gh/codepandaLN/picgocdn@master/img/%E5%A4%B4%E5%83%8F.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Panda</div><div class="author-info__description">胖达的项目bug记录</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://https://github.com/codepandaLN" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2637248917@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到Panda的项目bug记录Blog，技术学习笔记请转到我的语雀花园https://www.yuque.com/u32101617/fyz10a</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/08/27/%E7%90%86%E8%AE%BA-%E6%A1%88%E4%BE%8B/" title="无题"><img src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/61e5c154-982b-4edc-9dc1-6d1dab437278.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2024/08/27/%E7%90%86%E8%AE%BA-%E6%A1%88%E4%BE%8B/" title="无题">无题</a><time datetime="2024-08-27T14:24:58.000Z" title="发表于 2024-08-27 22:24:58">2024-08-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/08/22/SQL%EF%BC%8C%E6%95%B0%E6%8D%AE%E7%AB%9F%E6%98%AF%E7%A9%BA%E7%9A%84%EF%BC%9F/" title="每天查询三百万次的top SQL，数据竟是空的？"><img src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/3d43f36c-6429-4251-b8bc-ca08ce7b35e6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="每天查询三百万次的top SQL，数据竟是空的？"/></a><div class="content"><a class="title" href="/2024/08/22/SQL%EF%BC%8C%E6%95%B0%E6%8D%AE%E7%AB%9F%E6%98%AF%E7%A9%BA%E7%9A%84%EF%BC%9F/" title="每天查询三百万次的top SQL，数据竟是空的？">每天查询三百万次的top SQL，数据竟是空的？</a><time datetime="2024-08-22T08:21:45.000Z" title="发表于 2024-08-22 16:21:45">2024-08-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/08/16/LOCAL-LISTENER%E5%8F%82%E6%95%B0%E5%AF%BC%E8%87%B4%E4%B8%9A%E5%8A%A1%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%8C%E6%96%87%E6%9C%AB%E9%99%84Oracle%E8%BF%9E%E6%8E%A5%E6%95%85%E9%9A%9C%E6%A3%80%E6%9F%A5%E7%9B%91%E5%90%AC%E7%9A%84%E6%8E%92%E6%9F%A5%E6%B5%81%E7%A8%8B/" title="无题"><img src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/35280d287dbfff0c045c0b4cbbe09599.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2024/08/16/LOCAL-LISTENER%E5%8F%82%E6%95%B0%E5%AF%BC%E8%87%B4%E4%B8%9A%E5%8A%A1%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%8C%E6%96%87%E6%9C%AB%E9%99%84Oracle%E8%BF%9E%E6%8E%A5%E6%95%85%E9%9A%9C%E6%A3%80%E6%9F%A5%E7%9B%91%E5%90%AC%E7%9A%84%E6%8E%92%E6%9F%A5%E6%B5%81%E7%A8%8B/" title="无题">无题</a><time datetime="2024-08-16T12:58:29.000Z" title="发表于 2024-08-16 20:58:29">2024-08-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/29/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86-%E5%8F%82%E6%95%B0%E6%96%87%E4%BB%B6%E3%80%81%E6%8E%A7%E5%88%B6%E6%96%87%E4%BB%B6%E3%80%81%E5%BD%92%E6%A1%A3/" title="无题"><img src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/325cb8b5-477c-4f97-a977-5850fa3e2e3d.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2024/07/29/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86-%E5%8F%82%E6%95%B0%E6%96%87%E4%BB%B6%E3%80%81%E6%8E%A7%E5%88%B6%E6%96%87%E4%BB%B6%E3%80%81%E5%BD%92%E6%A1%A3/" title="无题">无题</a><time datetime="2024-07-29T06:28:03.000Z" title="发表于 2024-07-29 14:28:03">2024-07-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/18/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%AF%A2Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%80%E5%91%A8%E5%86%85%E6%AF%8F%E5%A4%A9%E7%9A%84SQL%E6%89%A7%E8%A1%8C%E6%AC%A1%E6%95%B0/" title="如何查询Oracle数据库一周内每天的SQL执行次数"><img src="https://raw.githubusercontent.com/codepandaLN/picgocdn/master/35280d287dbfff0c045c0b4cbbe09599.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何查询Oracle数据库一周内每天的SQL执行次数"/></a><div class="content"><a class="title" href="/2024/07/18/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%AF%A2Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%80%E5%91%A8%E5%86%85%E6%AF%8F%E5%A4%A9%E7%9A%84SQL%E6%89%A7%E8%A1%8C%E6%AC%A1%E6%95%B0/" title="如何查询Oracle数据库一周内每天的SQL执行次数">如何查询Oracle数据库一周内每天的SQL执行次数</a><time datetime="2024-07-18T13:27:49.000Z" title="发表于 2024-07-18 21:27:49">2024-07-18</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/bug/" style="font-size: 1.37em; color: #99a4b2">bug</a> <a href="/tags/oracle/" style="font-size: 1.5em; color: #99a9bf">oracle</a> <a href="/tags/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.23em; color: #999ea6">算法与数据结构</a> <a href="/tags/%E9%A1%B9%E7%9B%AE/" style="font-size: 1.1em; color: #999">项目</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/08/"><span class="card-archive-list-date">八月 2024</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/07/"><span class="card-archive-list-date">七月 2024</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">一月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/03/"><span class="card-archive-list-date">三月 2022</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">12</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">55.4k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-09-19T07:07:52.712Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2024 By Panda</div><div class="footer_custom_text">Hi, welcome to my Blog,welcome to my <a target="_blank" rel="noopener" href="https://github.com/codepandaLN">GitHub</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script defer src="/js/light.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://github.com/codepandaLN" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="https://blog.csdn.net/weixin_60783132?spm=1010.2135.3001.5343" style="margin-inline:5px" data-title="欢迎关注" title=""><img src="https://img.shields.io/badge/csdn-%E8%87%AA%E5%BE%8B%E7%9A%84%E7%86%8A%E7%8C%AB-blue" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="https://unpkg.zhimg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.min.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
